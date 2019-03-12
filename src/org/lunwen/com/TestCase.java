@@ -8,12 +8,12 @@ import org.lunwen.com.UpLoadQuestion.UpLoadQuestionEnum;
 
 public class TestCase {
 	public static void main(String[] args){
-		ChoiceQuestion cq = new ChoiceQuestion();
+		UpLoadQuestion cq = new UpLoadQuestion();
 		cq.readForChiCangYuE();
-		ChoiceQuestion.dataForUpLoadQuestionFromExcel.get(0);
-		int sizeOfData = ChoiceQuestion.dataForUpLoadQuestionFromExcel.size();
+//		ChoiceQuestion.dataForUpLoadQuestionFromExcel.get(0);
+		int sizeOfData = UpLoadQuestion.dataForUpLoadQuestionFromExcel.size();
 		for(int j = 0; j < sizeOfData; j++){
-			HashMap<UpLoadQuestionEnum, String> hashMap = ChoiceQuestion.dataForUpLoadQuestionFromExcel.get(j);
+			HashMap<UpLoadQuestionEnum, String> hashMap = UpLoadQuestion.dataForUpLoadQuestionFromExcel.get(j);
 			Set<UpLoadQuestionEnum> keySet = hashMap.keySet();
 			Iterator<UpLoadQuestionEnum> iterator = keySet.iterator();
 			while(iterator.hasNext()){
